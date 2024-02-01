@@ -20,9 +20,11 @@ function App() {
     }
   };
 
-  // const handleOnBlur = () => {
-  //   setShowSkills(false);
-  // };
+  const handleOnBlur = () => {
+    setTimeout(() => {
+      setShowSkills(false);
+    }, 200);
+  };
 
   const selectOnClick = (id) => {
     const itemToMove = skills.find((item) => item.id === id);
@@ -67,7 +69,7 @@ function App() {
           width: "600px",
         }}
         onFocus={handleOnFocus}
-        // onBlur={handleOnBlur}
+        onBlur={handleOnBlur}
       />
 
       {showSkills &&
