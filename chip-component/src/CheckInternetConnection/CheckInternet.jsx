@@ -17,6 +17,7 @@ const AppConnected = () => {
 
   const updateOnlineStatus = () => {
     setIsOnline(navigator.onLine);
+
     const message = navigator.onLine
       ? "Yay! The Internet is like a cup of coffee - essential for a good day!"
       : "Oops! Looks like the Wi-Fi is taking a break. Time to make friends with the offline world!";
